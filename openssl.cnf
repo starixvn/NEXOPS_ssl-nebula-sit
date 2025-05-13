@@ -1,0 +1,23 @@
+[req]
+distinguished_name = req_distinguished_name
+req_extensions = v3_req
+[req_distinguished_name]
+countryName = VN
+countryName_default = VN
+stateOrProvinceName = HCM
+stateOrProvinceName_default = HN
+localityName = HCM
+localityName_default = HCM
+organizationalUnitName = NexOps
+organizationalUnitName_default = NexOps
+commonName = *.nebula.sit
+commonName_max = 64
+[ v3_req ]
+# Extensions to add to a certificate request
+basicConstraints = CA:FALSE
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+subjectAltName = @alt_names
+[alt_names]
+DNS.1 = nebula.sit
+DNS.2 = *.nebula.sit
+
