@@ -10,7 +10,7 @@ ST 	= HCM
 L 	= HCM
 O 	= NexOps
 OU 	= NexOps
-CN 	= *.ops-sit.nebula.sit
+CN 	= *.nebula.sit
 [ v3_req ]
 # Extensions to add to a certificate request
 basicConstraints 	= CA:FALSE
@@ -19,4 +19,7 @@ subjectAltName 		= @alt_names
 [alt_names]
 DNS.1 = nebula.sit
 DNS.2 = *.nebula.sit
-
+DNS.3 = ops-sit.nebula.sit
+DNS.4 = *.ops-sit.nebula.sit
+DNS.5 = sc-sit.nebula.sit
+DNS.6 = *.sc-sit.nebula.sit
